@@ -1,0 +1,4 @@
+<?php
+
+/** Orange Footer Template */
+
