@@ -35,7 +35,7 @@ $wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish
                             <h1 class="cta-title"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" style="color: black; text-decoration: none;"><?php the_title(); ?></a></h1>
                             <div class="cta-desc">
                                 <p> <?php the_excerpt(); ?></p>
-        <p><?php $date = get_the_date( 'l F j, Y' );  echo $date . '<span style="color:#f15b41">&bull;</span>'; echo do_shortcode('[time-span]'); ?></p>
+        <p><?php $date = get_the_date( 'l F j, Y' );  echo $date . '<span style="color:#f15b41">&bull;</span>'; echo do_shortcode('[rt_reading_time postfix="minutes" postfix_singular="minute"]'); ?></p>
                             </div>
                         </div>
                         <div class="col-md-3 cta-button">

@@ -45,11 +45,49 @@ get_header(); ?>
         </div>
         <div class="col-sm">
             <h1>POPULAR<span style="color: orange;">.</span></h1>
-        </div>
+            <?php dynamic_sidebar( 'home_wpp' ); ?>
 
+
+            <h1>CATEGORIES<span style="color: orange;">.</span></h1>
+
+        </div>
+    </div>
+    <hr />
+        <!-- the loop -->
+
+        <?php
+        // the query
+        $wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'posts_per_page'=>3)); ?>
+    <div class="container-fluid">
+        <div class="row">
+            <div class=""col-sm">
+            <h1 class="h3 search-post-title">LATEST<span style="color: #f15b41">.</span></h1>
+        </div>
+        </div>
+        <?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
+
+            <div class="bs-calltoaction bs-calltoaction-default">
+                <div class="row">
+
+
+                    <div class="col-md-9 cta-contents">
+                        <h1 class="cta-title"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" style="color: black; text-decoration: none;"><?php the_title(); ?></a></h1>
+                        <div class="cta-desc">
+                            <p> <?php the_excerpt(); ?></p>
+                            <p><?php $date = get_the_date( 'l F j, Y' );  echo $date . '<span style="color:#f15b41">&bull;</span>'; echo do_shortcode('[rt_reading_time postfix="minutes" postfix_singular="minute"]'); ?></p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 cta-button">
+                        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail');  ?></a>
+                    </div>
+                </div>
+            </div>
+        <?php endwhile; ?>
+        <!-- end of the loop -->
+    <div class="center-label"><a href="/archives/">View More</a></div>
     </div>
 
-</div>
+
 <?php
 
 get_footer(); ?>

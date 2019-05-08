@@ -332,3 +332,21 @@ function get_stock_hero($category)
 //    case "Hightail FAQ" Category which is for future posts, default image can be: https://urldefense.proofpoint.com/v2/url?u=https-3A__unsplash.com_photos_qAriosuB-2DlY&d=DwIFaQ&c=ZgVRmm3mf2P1-XDAyDsu4A&r=oSXGsybfQcSSLrX1uxRnsbIfEjjSxpHE12TUfoP7ulU&m=3GfbZ2gXazD0NGuUl5NKpOdcCAj60YbMfdu18zBBsUc&s=FnC_ck7I-h-qITUQKefVfnEGgSNxhlp0bIZ5BMGqqrs&e=
     }
 }
+
+/**
+ * Register our sidebars and widgetized areas.
+ *
+ */
+function home_wpp_widgets_init() {
+
+    register_sidebar( array(
+        'name'          => 'Home WPP',
+        'id'            => 'home_wpp',
+        'before_widget' => '',
+        'after_widget'  => '',
+        'before_title'  => '',
+        'after_title'   => '',
+    ) );
+
+}
+add_action( 'widgets_init', 'home_wpp_widgets_init' );

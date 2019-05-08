@@ -26,12 +26,12 @@
     <div class="jumbotron-orange">
         <div>
             <div class="container jb-text">
-                <h1 class="display-3"><?php the_title(); ?></h1>
+                <h1 class="ot-post-title"><?php the_title(); ?></h1>
             </div><div class="post-hero-txt">
                 <?php $excerpt = get_the_excerpt();
                 echo $excerpt;
                 ?><br />
-                <?php echo get_avatar( get_the_author_meta( 'ID'), ['class' => 'rounded']); ?>
+                <?php echo user_avatar_get_avatar( get_the_author_meta( 'ID'), 50); ?>
                 <p class="details">By <a href="<?php the_author_posts() ?>"><?php the_author(); ?> </a>
                     <br /><?php echo get_the_date('F j'); ?> </p>
             </div>
