@@ -214,6 +214,20 @@ p a:hover {
 	height: 200px;
 }
 
+.details {
+    text-decoration: #ffffff;
+    color: #ffffff;
+}
+
+.details a {
+
+    color: #ffffff;
+}
+
+.details a:hover {
+
+    color: #ffffff;
+}
 .bs-calltoaction{
     position: relative;
     width:auto;

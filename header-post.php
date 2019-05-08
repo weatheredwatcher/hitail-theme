@@ -32,7 +32,7 @@
                 echo $excerpt;
                 ?><br />
                 <?php echo user_avatar_get_avatar( get_the_author_meta( 'ID'), 50); ?>
-                <p class="details">By <a href="<?php the_author_posts() ?>"><?php the_author(); ?> </a>
+                <p class="details"><a href="<?php the_author_posts() ?>"><?php the_author(); ?> </a>
                     <br /><?php echo get_the_date('F j'); ?> </p>
             </div>
         </div>

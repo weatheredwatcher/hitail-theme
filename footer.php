@@ -48,7 +48,7 @@
 </div>
 <div id='lowerbar-wrapper' style="position: relative;left: 100px;">
 <a class='lowerbar' id='lowerbar4' preferred='yes'>
-<p>P.S. You can also <br /> find Hightail on</p>
+<p style="color: #ffffff;">P.S. You can also <br /> find Hightail on</p>
     <a href="https://twitter.com/HightailHQ"><img src="/wp-content/themes/hitail-theme/Twitter.png" style="margin: 5px;" width="40" height="40" alt="Twitter" /></a>
     <a href="https://www.linkedin.com/company/opentext-hightail"><img src="/wp-content/themes/hitail-theme/LinkedIn.png" width="40" height="40" alt="linkedin" /></a>
 <img src="/wp-content/themes/hitail-theme/appstore-badge.png" style="margin: 5px;" height="40" />

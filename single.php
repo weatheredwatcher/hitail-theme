@@ -29,6 +29,7 @@ include 'header-post.php'; ?>
             <div>
                 <img src="/wp-content/themes/hitail-theme/CC%20CTA.png" alt="community collaboration" style="width: 100%" />
             </div>
+            <hr />
             <div class="social-icons">
                 <p><h1 style="font-family: verbregular;">SHARE THIS POST</h1></p>
                <h1>filt</h1>
